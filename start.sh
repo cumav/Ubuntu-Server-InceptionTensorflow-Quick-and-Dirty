@@ -1,4 +1,6 @@
-ear
+#!/bin/sh
+clear
+
 echo "Update system"
 
 sudo apt-get update
