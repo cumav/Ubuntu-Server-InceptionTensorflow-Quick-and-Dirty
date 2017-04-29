@@ -30,15 +30,16 @@ def do_upload():
                     
             predictions = sess.run(softmax_tensor, \
                                    {'DecodeJpeg/contents:0': image_data})
-            females = str((str("%.2f" %((predictions [0][1])*100)) +"%"+ " " + str(label_lines[1])))
-            males   = str((str("%.2f" %((predictions [0][0])*100)) +"%"+ " " + str(label_lines[0])))
+            # Here only binary classification. If more labels then add predictions [0][x] snd label_lines[x]
+            prediction1 = str((str("%.2f" %((predictions [0][1])*100)) +"%"+ " " + str(label_lines[1])))
+            prediction2   = str((str("%.2f" %((predictions [0][0])*100)) +"%"+ " " + str(label_lines[0])))
         tf.reset_default_graph()
 
     except:
-        males = "none"
-        females = "none"
+        prediction1 = "none"
+        prediction2 = "none"
     
-    return template('<h3>{{males}} and {{females}}</h3>',males = males, females = females)
+    return template('<h3>{{prediction2}} and {{prediction1}}</h3>', prediction2 = prediction2, prediction1 = prediction1)
 
 
 run(host='0.0.0.0', port=8080)
