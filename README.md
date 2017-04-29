@@ -2,7 +2,7 @@
 Fast way to deploy Tensorflow Inception apps on Digital ocean.
 Works on Ubuntu 16.04.
 How to get started:
-- train your model. For mroe about that check out the Tensorflow for poets tutorial. https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
+- train your model. For more on that check out the Tensorflow for poets tutorial. https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
 - run the Shell Script. If that doesnt work try to install modules manually.
 - after everything is installed, clone this repository and paste your retrained_labels.txt and retrained_graph.pb into the projects folder
 - If you have more than two classes then change classify.py from  "<-- Change from here -->"
