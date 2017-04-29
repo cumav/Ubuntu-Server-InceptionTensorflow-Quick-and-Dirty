@@ -30,6 +30,8 @@ def do_upload():
                     
             predictions = sess.run(softmax_tensor, \
                                    {'DecodeJpeg/contents:0': image_data})
+            
+            # <-- Change from here -->
             # Here only binary classification. If more labels then add predictions [0][x] snd label_lines[x]
             prediction1 = str((str("%.2f" %((predictions [0][1])*100)) +"%"+ " " + str(label_lines[1])))
             prediction2   = str((str("%.2f" %((predictions [0][0])*100)) +"%"+ " " + str(label_lines[0])))
