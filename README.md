@@ -1,4 +1,5 @@
-# DigitalOceanTensorflow-Quick-and-Dirty
+# Ubuntu Inception Tensorflow Quick-and-Dirty
+(tested on Digital Ocean)
 Fast way to deploy Tensorflow Inception apps on Digital ocean.
 Works on Ubuntu 16.04.
 How to get started:
