@@ -9,4 +9,3 @@ How to get started:
 - If you have more than two classes then change classify.py from  "<-- Change from here -->"
 - Open terminal -> cd into the projects folder -> then: >$ nohup python3 classify.py
 - App should be live now. Visit your ip at port=8080 if you want to change that change "host='0.0.0.0', port=8080"
-- Check out this example: http://178.62.205.212:8080/
