@@ -8,4 +8,4 @@ How to get started:
 - after everything is installed, clone this repository and paste your retrained_labels.txt and retrained_graph.pb into the projects folder
 - If you have more than two classes then change classify.py from  "<-- Change from here -->"
 - Open terminal -> cd into the projects folder -> then: >$ nohup python3 classify.py
-- App should be live now. Visit your ip at port=8080 if you want to change that change "host='0.0.0.0', port=8080"
+- App should be live now. Visit your ip at port=8080 if you want to change that, change "host='0.0.0.0', port=8080"
